@@ -5,7 +5,7 @@
 	let response = ''
  	let points = ''
 	
-	function check(response) {
+function check(response) {
 		if (response.includes('yes')) {
 		result = 'correct'
 		points += 1
@@ -14,10 +14,10 @@
 		} 
 	}
 	
+	
   </script>
-<main>
-<h1>NZ General Knowlage Quiz!</h1>
 
+<h1>NZ General Knowlage Quiz!</h1>
 <main>
 <label>
 Name:
@@ -30,7 +30,7 @@ Name:
   </label>
   <button on:click={begin}>
     Enter
-  </main>
+ 
 
   Question 1 - Which city is nicknamed the Edinburgh of the South?
   <label>
@@ -92,8 +92,8 @@ Question 3 - What famous fizzy drink was made in New Zealand?
     </label>
 
   <label>
-    Jackson Peters    
-    <input type="radio" bind:group={response} value={'yes'}>
+    Ginger beer   
+    <input type="radio" bind:group={response} value={'no2'}>
     </label>
 
   <button on:click={check(response)}> Check </button>
@@ -102,7 +102,166 @@ Question 3 - What famous fizzy drink was made in New Zealand?
     {result}
     </p>
 
+Question 4 - Name the largest city on New Zealand's South Island?
 
+  <label>
+    Wellington
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    Christchurch
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    Palmerston    
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 5 - Name the highest mountain in New Zealand?
+
+  <label>
+    Mt Cook
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    Mt Everest
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    Mt Isobel    
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 6 - The Maori name for New Zealand is ‘Aotearoa’, what is the translation of this word?
+
+  <label>
+    New Zealand
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    The land of the long white cloud
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    Long white cloud   
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 7 - What are the only land mammals native to New Zealand - all the others were introduced by Maoris and Europeans?
+ 
+   <label>
+    Kiwi
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    Pokeko
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    Moa  
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 8 - What's New Zealand's biggest city?
+
+  <label>
+    Christchurch
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    Auckland
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    Wellington   
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 9 - What's the total population of New Zealand, as of 2021 September?
+
+  <label>
+    4.8 Million
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <label>
+    5.0 Million
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    5.01 Million 
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
+
+Question 10 - What is the nickname given to New Zealanders?
+
+  <label>
+    Zealander's
+    <input type="radio" bind:group={response} value={'no1'}>
+    </label>
+
+  <label>
+    Newlander's
+    <input type="radio" bind:group={response} value={'no2'}>
+    </label>
+
+  <label>
+    Kiwi's 
+    <input type="radio" bind:group={response} value={'yes'}>
+    </label>
+
+  <button on:click={check(response)}> Check </button>
+
+  <p>
+    {result}
+    </p>
 
 <p>
 	{points} points in total
