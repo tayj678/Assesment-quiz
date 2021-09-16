@@ -1,5 +1,5 @@
 <script>
-	//these are all of the names of the variables that are used throughout my code. 
+//these are all of the names of the variables that are used throughout my code. 
     let name = '';
 		let formClass = '';
     let result = '';
@@ -36,7 +36,7 @@
             result = "wrong";
         }
 
-	// This makes sure that each question is checked induvidually wheither its right or wrong. Result is from the function above which see's if the player got the question right or wrong.  
+// This makes sure that each question is checked induvidually wheither its right or wrong. Result is from the function above which see's if the player got the question right or wrong.  
     if (response.includes("Q1")) {
            result1 = result;
         } else if (response.includes("Q2")){
@@ -59,7 +59,8 @@
 						resultx = result
 				}
 		}
-	// this function is for question 8 as it is a text question. There is a while loop which continously checks when someone does not write anything in the box, it will tell them to write something. It also has the same point system as the other function where if it is correct it will add a point and if it is wrong it will say "wrong".
+
+// this function is for question 8 as it is a text question. There is a while loop which continously checks when someone does not write anything in the box, it will tell them to write something. It also has the same point system as the other function where if it is correct it will add a point and if it is wrong it will say "wrong".
 		function check2(){
 			while (response8 == ''){
 		p = 'please enter your response'
@@ -72,7 +73,7 @@
 			}
 		}
 	
-	// this function is for when the player finishes the quiz and wants to start again. The button at the bottom of the code will reset the points and reset the questions. 
+// this function is for when the player finishes the quiz and wants to start again. The button at the bottom of the code will reset the points and reset the questions. 
 		function reset(){
 			points = 0
 			response1 ='';
@@ -86,7 +87,6 @@
 			response9= '';
 			responsex= '';
 }
-			
 
 </script>
 
@@ -101,10 +101,10 @@
 	<input bind:value={formClass}>
 </label>
 	
-<!-- this can put your name/form class in the curly brackets -->
+<!-- this can put your name/form class in the curly brackets when you write them in the boxes -->
 <h1>Kia Ora {name}! {formClass}</h1>
 
-	<!-- This is question one, whithin this there are three possible answers -->
+<!-- This is question one, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 1 - Which city is nicknamed the Edinburgh of the South? <br />
 <label>
     Christchurch
@@ -127,7 +127,7 @@ Question 1 - Which city is nicknamed the Edinburgh of the South? <br />
     {result1}
 </p>
 
-	<!-- This is question two, whithin this there are three possible answers -->
+<!-- This is question two, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 2 - Which New Zealand film maker and screenwriter won an Oscar for Best
 Director in 2003?<br />
 
@@ -152,7 +152,7 @@ Director in 2003?<br />
     {result2}
 </p>
 
-	<!-- This is question three, whithin this there are three possible answers -->
+<!-- This is question three, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 3 - What famous fizzy drink was made in New Zealand?<br />
 
 <label>
@@ -176,7 +176,7 @@ Question 3 - What famous fizzy drink was made in New Zealand?<br />
     {result3}
 </p>
 
-	<!-- This is question four, whithin this there are three possible answers -->
+<!-- This is question four, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 4 - Name the largest city on New Zealand's?<br />
 
 <label>
@@ -200,7 +200,7 @@ Question 4 - Name the largest city on New Zealand's?<br />
     {result4}
 </p>
 
-	<!-- This is question five, whithin this there are three possible answers -->
+<!-- This is question five, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 5 - Name the highest mountain in New Zealand?<br />
 
 <label>
@@ -224,7 +224,7 @@ Question 5 - Name the highest mountain in New Zealand?<br />
     {result5}
 </p>
 
-	<!-- This is question six, whithin this there are three possible answers -->
+<!-- This is question six, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 6 - The Maori name for New Zealand is ‘Aotearoa’, what is the
 translation of this word?<br />
 
@@ -249,7 +249,7 @@ translation of this word?<br />
     {result6}
 </p>
 
-	<!-- This is question seven, whithin this there are three possible answers -->
+<!-- This is question seven, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 7 - What are the only land mammals native to New Zealand - all the
 others were introduced by Maoris and Europeans?<br />
 
@@ -274,7 +274,7 @@ others were introduced by Maoris and Europeans?<br />
     {result7}
 </p>
 
-	<!-- This is question eight, whithin this there are three possible answers -->
+<!-- This is question eight, this is a text type of question. The player will write what they think is the answer in the box and press the check button. It will print out weither it is correct or wrong. if the player does not write anything down and presses the check button it will say "please write something in the box" -->
 Question 8 - What's the town known for the best Fish 'n' Chips?<br />
 
 <label>
@@ -291,7 +291,7 @@ Question 8 - What's the town known for the best Fish 'n' Chips?<br />
     {result8}
 </p>
 
-	<!-- This is question nine, whithin this there are three possible answers -->
+<!-- This is question nine, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 9 - What's the total population of New Zealand, as of 2021 September?<br
 />
 
@@ -316,7 +316,7 @@ Question 9 - What's the total population of New Zealand, as of 2021 September?<b
     {result9}
 </p>
 
-	<!-- This is question ten, whithin this there are three possible answers -->
+<!-- This is question ten, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
 Question 10 - What is the nickname given to New Zealanders?<br />
 
 <label>
@@ -340,12 +340,12 @@ Question 10 - What is the nickname given to New Zealanders?<br />
     {resultx}
 </p>
 
-<!-- -->
+<!-- this is the output in the brackets, it shows the player at the end how many points they got in total.-->
 <p>
     {points} points in total
 </p>
 
-<!-- -->
+<!-- This is a button which is from the function from the top. Basically when the player presses the button all of the questions and points will reset so the player can play again. -->
 <button on:click={reset}>
   Reset & Go to Top
 </button>
