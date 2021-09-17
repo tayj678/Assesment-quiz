@@ -86,6 +86,21 @@
 			response8= '';
 			response9= '';
 			responsex= '';
+			name= '';
+			formClass= ''; 
+      result = '';
+      result1 = '';
+      result2 = '';
+      result3 = '';
+      result4 = '';
+      result5 = '';
+      result6 = '';
+      result7 = '';
+      result8 = '';
+      result9 = '';
+      resultx = '';
+		  response = '';
+			p ='';
 }
 
 </script>
@@ -177,7 +192,7 @@ Question 3 - What famous fizzy drink was made in New Zealand?<br />
 </p>
 
 <!-- This is question four, whithin this there are three possible answers. They are radio buttons for the questions, which are the little dots. When players checks one of the circle buttons they press the check button which goes back to the fuction at the top, this checks that the question they choose when the check button is pressed is either correct or wrong -->
-Question 4 - Name the largest city on New Zealand's?<br />
+Question 4 - Name the largest city in New Zealand?<br />
 
 <label>
     Wellington
